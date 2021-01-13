@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<%- include('../partials/head'); %>
+<body>
+<%- include('../partials/header'); %>
+<div class="app-main">
+    <form action="/admin/delete/<%= userToDisplay.username %>" method="post">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="card shadow-lg border-0 rounded-lg mt-5">
+                        <div class="card-header"><h3 class="text-center font-weight-light my-4">Delete <%= userToDisplay.username %>'s record</h3></div>
+                        <div class="card-body">
+                            <%- include('../partials/userDetailsFormView'); %>
+                            <div class="form-group">
+                                <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#confirmDelete">
+                                    Delete
+                                </button>
+                                <a href="/admin" class="btn btn-outline-dark cancel">Cancel</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <%- include('../partials/confirmDeleteModal'); %>
+        </div>
+    </form>
+</div>
+</body>
+<%- include('../partials/logoutModal'); %>
+</html>

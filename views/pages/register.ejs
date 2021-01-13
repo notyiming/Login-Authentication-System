@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<%- include('../partials/head'); %>
+
+<form autocomplete="off" action = "/register" method="POST">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-7">
+                <div class="card shadow-lg border-0 rounded-lg mt-5">
+                    <div class="card-header"><h3 class="text-center font-weight-light my-4">Create Account</h3></div>
+                    <div class="card-body">
+                        <% if (errorMessage) { %>
+                            <h6 class = "errorMessage"><%= errorMessage %></h6>
+                        <% } %>
+                        <%- include('../partials/userDetailsFormInsert'); %>
+                        <div class="form-group d-flex align-items-center justify-content-between mt-4 mb-0">
+                            <a href="/" class="btn btn-secondary">Cancel</a>
+                            <button type="submit" class="btn btn-primary">Register</button>
+                        </div>
+                    </div>
+                    <div class="card-footer text-center">
+                        <div class="small"><a href="/login">Have an account? Go to login</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</form>
+</html>
+

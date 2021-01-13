@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<%- include('../partials/head'); %>
+<body>
+<%- include('../partials/header'); %>
+<div class="app-main">
+    <div class="jumbotron big-white-container text-center">
+        <div class="page-header-content pt-10">
+            <div class="container text-center">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h1 class="page-header-title mb-3">Help Center</h1>
+                        <p class="lead text-muted">Find Answers Here.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-5 d-flex justify-content-around">
+            <div class="card link-page-card">
+                <div class="card-body">
+                    <h5 class="card-title">How to register for an account</h5>
+                    <p class="card-text">Find out how to sign up for an account</p>
+                    <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#registration">
+                        View
+                    </button>
+                </div>
+            </div>
+            <div class="card link-page-card">
+                <div class="card-body">
+                    <h5 class="card-title">How to log into an account</h5>
+                    <p class="card-text">Find out how to log into an account</p>
+                    <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#login">
+                        View
+                    </button>
+                </div>
+            </div>
+            <div class="card link-page-card">
+                <div class="card-body">
+                    <h5 class="card-title">How to log out from an account</h5>
+                    <p class="card-text">Find out how to log out from an account</p>
+                    <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#logout">
+                        View
+                    </button>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="mt-5 d-flex justify-content-around">
+            <div class="card link-page-card">
+                <div class="card-body">
+                    <h5 class="card-title">How do I create new account as an admin?</h5>
+                    <p class="card-text">Find out how to create new account as an admin</p>
+                    <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#createNewAccount">
+                        View
+                    </button>
+                </div>
+            </div>
+            <div class="card link-page-card">
+                <div class="card-body">
+                    <h5 class="card-title">How do I change details of an account as an admin?</h5>
+                    <p class="card-text">Find out how to change details of an account as an admin</p>
+                    <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#changeAccountDetails">
+                        View
+                    </button>
+                </div>
+            </div>
+            <div class="card link-page-card">
+                <div class="card-body">
+                    <h5 class="card-title">How do I delete an account as an admin?</h5>
+                    <p class="card-text">Find out how to delete an account as an admin</p>
+                    <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#deleteAccount">
+                        View
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<%- include('../partials/logoutModal'); %>
+<%- include('../partials/helpModal_registration'); %>
+<%- include('../partials/helpModal_createNewAccount'); %>
+<%- include('../partials/helpModal_changeAccountDetails'); %>
+<%- include('../partials/helpModal_deleteAccount'); %>
+<%- include('../partials/helpModal_login'); %>
+<%- include('../partials/helpModal_logout'); %>
+<%- include('../partials/footer'); %>
+</body>
+</html>

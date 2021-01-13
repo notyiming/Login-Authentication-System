@@ -1,0 +1,23 @@
+{
+  "name": "loginauthenticationsystem",
+  "version": "1.3.5",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "sqlite3": "^5.0.0"
+  },
+  "main": "app.js",
+  "devDependencies": {},
+  "author": "Yi Ming Tan R00183099",
+  "license": "ISC",
+  "description": "Server Side Web Development Project A"
+}

@@ -1,0 +1,33 @@
+.errorMessage{
+  color:red;
+}
+
+body{
+  background-color: #eaedf0;
+}
+
+.app-main{
+  padding: 30px 30px 0;
+}
+
+.card {
+  box-shadow: 0 0.46875rem 2.1875rem rgba(4,9,20,0.03), 0 0.9375rem 1.40625rem rgba(4,9,20,0.03), 0 0.25rem 0.53125rem rgba(4,9,20,0.05), 0 0.125rem 0.1875rem rgba(4,9,20,0.03);
+}
+
+.home-link-img{
+  height: 13em;
+}
+
+.link-page-card{
+  width: 20rem;
+}
+
+.big-white-container{
+  background-color: white;
+  box-shadow: 0 0.46875rem 2.1875rem rgba(4,9,20,0.03), 0 0.9375rem 1.40625rem rgba(4,9,20,0.03), 0 0.25rem 0.53125rem rgba(4,9,20,0.05), 0 0.125rem 0.1875rem rgba(4,9,20,0.03);
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}

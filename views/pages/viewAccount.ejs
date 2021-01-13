@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<%- include('../partials/head'); %>
+<body>
+<%- include('../partials/header'); %>
+<div class="app-main">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-7">
+                <div class="card shadow-lg border-0 rounded-lg mt-5">
+                    <div class="card-header"><h3 class="text-center font-weight-light my-4"><%= userToDisplay.username %>'s record</h3></div>
+                    <div class="card-body">
+                        <%- include('../partials/userDetailsFormView'); %>
+                        <div class="form-group">
+                            <a href="/admin" class="btn btn-outline-dark cancel">Go Back</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<%- include('../partials/logoutModal'); %>
+</html>

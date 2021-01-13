@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<%- include('../partials/head'); %>
+  <body>
+    <%- include('../partials/header'); %>
+    <div class="app-main">
+      <section class="jumbotron text-center big-white-container">
+        <div class="container">
+      <% if(isLoggedIn){ %>
+          <h1 class="jumbotron-heading">Welcome <%=user.username%>!</h1>
+          <p class="lead text-muted">Hope you're having a nice day</p>
+      <% } else { %>
+          <h1 class="jumbotron-heading">Good Day!</h1>
+          <p class="lead text-muted">Welcome to Yi Ming's Login Authentication System</p>
+          <p>
+            <a class="btn btn-outline-success my-2 my-sm-0" href="/login">Log In</a>
+            <a class="btn btn-outline-secondary my-2 my-sm-0" href="/register">Sign Up</a>
+          </p>
+      <%}%>
+        </div>
+      </section>
+
+      <div class="d-flex justify-content-around">
+        <div class="card link-page-card">
+          <img src="/images/aboutUs.png" class="card-img-top home-link-img" alt="About Us">
+          <div class="card-body">
+            <h5 class="card-title">About Us</h5>
+            <p class="card-text">Know more about the company and meet the team.</p>
+            <a href="/about" class="btn btn-primary">Go to About Us page</a>
+          </div>
+        </div>
+        <div class="card link-page-card">
+          <img src="/images/help.png" class="card-img-top home-link-img" alt="help">
+          <div class="card-body">
+            <h5 class="card-title">Help Center</h5>
+            <p class="card-text">Do you need any help? Click here if you do.</p>
+            <a href="/help" class="btn btn-primary">Go to Help Center page</a>
+          </div>
+        </div>
+        <div class="card link-page-card">
+          <img src="/images/contacts.png" class="card-img-top home-link-img" alt="contacts">
+          <div class="card-body">
+            <h5 class="card-title">Contact Us</h5>
+            <p class="card-text">Please contact us if you have any enquiries.</p>
+            <a href="/contacts" class="btn btn-primary">Go to Contact Us page</a>
+          </div>
+        </div>
+
+        <% if(user){ %>
+        <% if(user.role==='admin'){ %>
+        <div class="card link-page-card">
+          <img src="/images/admin.png" class="card-img-top home-link-img" alt="contacts">
+          <div class="card-body">
+            <h5 class="card-title">Admin Board</h5>
+            <p class="card-text">Please contact us if you have any enquiries.</p>
+            <a href="/admin" class="btn btn-primary">Go to Admin Board page</a>
+          </div>
+        </div>
+        <%}%>
+        <%}%>
+      </div>
+    </div>
+    <%- include('../partials/logoutModal'); %>
+    <%- include('../partials/footer'); %>
+  </body>
+</html>
